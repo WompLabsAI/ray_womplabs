@@ -509,7 +509,7 @@ def _configure_iam_role(config, crm, iam):
     else:
         roles = DEFAULT_SERVICE_ACCOUNT_ROLES
 
-    _add_iam_policy_binding(service_account, roles, crm)
+    #_add_iam_policy_binding(service_account, roles, crm)
 
     config["head_node"]["serviceAccounts"] = [
         {
